@@ -15,12 +15,13 @@ def random_pw():
     letter_str = string.ascii_lowercase  #return a string of 'abc----z'
     num_list = string.digits
     symbols_list = string.punctuation    
-    password = ""
+    
 
     while True:
         try:
             num = input("Do you want to include number or not? (y/n): ").lower()
             symbols = input("Do you want to include symbols or not? (y/n): ").lower()
+            password = ""
 
             if num == 'y' and symbols == 'y':
                 pool = letter_str + num_list + symbols_list
